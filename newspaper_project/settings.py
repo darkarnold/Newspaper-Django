@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 3rd Party Apps
+    'crispy_forms',
+    # Local Apps
     'accounts.apps.AccountsConfig',
+    'pages.apps.PagesConfig',
 
 ]
 
@@ -133,6 +137,9 @@ LOGIN_REDIRECT_URL = 'index'
 
 LOGOUT_REDIRECT_URL = 'index'
 
+
+# Django crispy forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 
