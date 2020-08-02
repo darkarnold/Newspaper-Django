@@ -141,5 +141,8 @@ LOGOUT_REDIRECT_URL = 'index'
 # Django crispy forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+# Sending password reset emails
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 
 
