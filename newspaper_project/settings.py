@@ -142,7 +142,23 @@ LOGOUT_REDIRECT_URL = 'index'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Sending password reset emails
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+DEFAULT_FROM_EMAIL = 'narnold@cis.mak.ac.ug'
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+
+EMAIL_HOST_USER = 'apikey'
+
+EMAIL_HOST_PASSWORD = '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' # Use environ variable to store password 
+                                                                                                    #for production env
+
+EMAIL_PORT = 587
+
+EMAIL_USE_TLS = True
+
+
+
 
 
 
