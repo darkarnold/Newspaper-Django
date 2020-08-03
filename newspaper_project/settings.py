@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # Local Apps
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
+    'articles.apps.ArticlesConfig',
 
 ]
 
@@ -112,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
