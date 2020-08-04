@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{%extends 'accounts/base.html' %}
+
+{% block content %}
+<h1>Add New Article </h1>
+<form  method="post">
+    {%csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Save" class="btn btn-success ml-2">
+</form>
+{% endblock content %}
