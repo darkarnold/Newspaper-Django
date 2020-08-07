@@ -20,7 +20,7 @@ class ArticleCreateView(LoginRequiredMixin,CreateView):
 
     
 
-class ArticleListView(ListView):
+class ArticleListView(LoginRequiredMixin,ListView):
     model = Article
 
 

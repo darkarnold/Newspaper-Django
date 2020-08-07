@@ -3,13 +3,17 @@
 {% block title %}Log In {% endblock title%}
 
 {% block content %}
-
-<h2>Log In </h2>
-<form  method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Log In" class = "btn btn-success">
-</form>
+<h2 style="text-align: center;">Log In </h2>
+<div class="row justify-content-center align-items-center ">
+    
+    <form  method="post" class="form-group" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Log In" class = "btn btn-success">
+    </form>
+   
+</div>
+<p style="text-align: center;"><a href="{% url 'password_reset' %}">Forgot your password</a></p>
 
 {% endblock content %}
 
